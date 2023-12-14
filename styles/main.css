@@ -1,0 +1,236 @@
+body {
+    background-color: whitesmoke;
+    font-family: 'Jost', sans-serif;
+}
+
+button {
+    appearance: none;
+    border: 0;
+    background-color: transparent;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+
+.navbar button img:hover {
+    cursor: pointer;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #4E4B46;
+    font-size: 0.875rem;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-modal {
+    display: none;
+    position: absolute;
+    top: 5.4rem;
+    right: 1rem;
+    width: 15rem;
+    background-color: #fff;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.menu-modal.show {
+    display: block;
+}
+
+.menu-modal div {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-modal div li {
+    padding: 10px;
+}
+
+.menu-modal div li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.875rem;
+}
+
+.section-1 {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-1 h1 {
+    font-size: 4rem;
+    background: linear-gradient(to right, #E39700, #FFBE00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 44rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.section-1 .text {
+    text-align: center;
+    width: 50rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #4E4B46;
+}
+
+.section-1 .group-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.container {
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.box-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.box-1 div h1 {
+    text-align: right;
+    color: #E39700;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.box-1 div p {
+    width: 16rem;
+    font-size: 1.25rem;
+    color: #4E4B46;
+    font-weight: 400;
+    text-align: right;
+}
+
+.box-2 {
+    display: block;
+}
+
+.box-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.box-3 div h1 {
+    text-align: left;
+    color: #E39700;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.box-3 div p {
+    width: 16rem;
+    font-size: 1.25rem;
+    color: #4E4B46;
+    font-weight: 400;
+    text-align: left;
+}
+
+.box-4 {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .section-1 h1 {
+        font-size: 3rem;
+        width: 25rem;
+    }
+
+    .section-1 .text {
+        width: 23rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        gap: 2rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5rem;
+    }
+
+    .box-1 div h1 {
+        text-align: center;
+        color: #E39700;
+        font-weight: 600;
+        font-size: 2rem;
+    }
+
+    .box-1 div p {
+        width: 16rem;
+        font-size: 1.25rem;
+        color: #4E4B46;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .box-2 {
+        display: none;
+    }
+
+    .box-3 div h1 {
+        text-align: center;
+        color: #E39700;
+        font-weight: 600;
+        font-size: 2rem;
+    }
+    
+    .box-3 div p {
+        width: 16rem;
+        font-size: 1.25rem;
+        color: #4E4B46;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .box-4 {
+        display: block;
+    }
+}
