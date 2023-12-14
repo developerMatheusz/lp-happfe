@@ -321,34 +321,6 @@ footer .item-1 a {
 }
 
 @media screen and (max-width: 768px) {
-    footer {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        background-color: white;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        padding-left: 10px;
-        padding-right: 10px;
-        gap: 4rem;
-    }
-
-    footer .item-1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    footer .item-2 {
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        gap: 0.3rem;
-    }
-
     .section-3 form {
         display: flex;
         align-items: center;
@@ -453,6 +425,34 @@ footer .item-1 a {
 }
 
 @media screen and (max-width: 1000px) {
+    footer {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 4rem;
+    }
+
+    footer .item-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    footer .item-2 {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        gap: 0.3rem;
+    }
+    
     .section-1 h1 {
         font-size: 3rem;
         width: 25rem;
